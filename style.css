@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
     --primary: #6B4CE6;
     --text-dark: #333;
@@ -13,17 +15,97 @@
     font-optical-sizing: auto;
 }
 
+.perent {
+    position: relative;
+}
+
 .header {
     width: 100%;
+    position: absolute;
+    top: 46px;
+    border: 1px;
+    border-top-left-radius: 28px;
+    background-color: #fff;
+    border-top-right-radius: 28px;
+}
+
+.ban-btn {
+    padding: 2px 5px;
+    font-size: 12px;
+    height: 28px;
+    width: 77px;
+    border-radius: 7px;
+    border: none;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.v6_720 {
+    width: 206px;
+    height: 104px;
+    background: linear-gradient(rgba(150, 31, 248, 1), rgba(129, 45, 201, 1));
+    opacity: 1;
+    position: absolute;
+    bottom: 48px;
+    left: 1026px;
+    border-radius: 50%;
+}
+
+.v6_719 {
+    width: 767px;
+    height: 120px;
+    background: #6953D3;
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 334px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.v6_718 {
+    width: 98px;
+    height: 98px;
+    background: rgba(255, 132, 127, 1);
+    opacity: 1;
+    position: absolute;
+    top: 29px;
+    left: 256px;
+    border-radius: 50%;
+}
+
+.v6_717 {
+    width: 150px;
+    height: 150px;
+    background: rgba(105, 83, 211, 1);
+    opacity: 1.2;
+    position: absolute;
+    left: 110px;
+    border-radius: 50%;
+    bottom: 48px;
+}
+
+.v6_716 {
+    width: 150px;
+    height: 150px;
+    background: rgba(102, 20, 170, 1);
+    opacity: 1.2;
+    position: absolute;
+    left: -62px;
+    border-radius: 50%;
+    bottom: -59px;
 }
 
 .top-banner {
-    background: var(--primary);
+    background: #4E1C99;
     color: var(--white);
     padding: 10px;
     gap: 20rem;
-    position: relative;
+    position: absolute;
     z-index: -1;
+    height: 72px;
+    width: 100%;
 }
 
 /* Navbar style */
@@ -128,6 +210,11 @@
     .nav-buttons {
         display: none;
     }
+
+    .ban-btn {
+        position: relative;
+        z-index: 1;
+    }
 }
 
 /* hero section style Styles */
@@ -138,6 +225,8 @@
     padding: 5rem 5% 0;
     gap: 7rem;
     align-items: center;
+    position: relative;
+    top: 93px;
 }
 
 .hero-content {
@@ -313,6 +402,7 @@ h1 {
     .app-label {
         font-size: 0.9rem;
     }
+
 }
 
 /* General Styles */
@@ -324,6 +414,7 @@ h1 {
     background-size: 100% 100%, 57% 100%;
     background-position: right;
     position: relative;
+    margin-top: 90px;
 }
 
 .stats>h2 {
