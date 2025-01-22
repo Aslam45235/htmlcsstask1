@@ -9,12 +9,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
 <body>
-
   <!-- Header -->
   <header class="header">
     <div class="top-banner">
@@ -22,10 +25,12 @@
     </div>
 
     <nav class="nav-bar">
+      <!-- Logo Section -->
       <div class="logo">
         <img src="images/logo.png" alt="ITech" class="cls-logo">
       </div>
 
+      <!-- Navigation Menu -->
       <ul class="nav-menu">
         <li><a href="#" class="cls-list">Home</a></li>
         <li><a href="#" class="cls-list">Pages</a></li>
@@ -34,12 +39,30 @@
         <li><a href="#" class="cls-list">Contact</a></li>
       </ul>
 
+      <!-- Hamburger Menu -->
+      <div class="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <!-- Action Buttons -->
       <div class="nav-buttons">
-        <img src="images/Vector.png" alt="" class="account-btn">
+        <i class="fa-regular fa-user account-btn"></i>
         <button class="join-btn">Join ITech Hub →</button>
       </div>
     </nav>
   </header>
+
+  <!--Javascript for responsive navbar-->
+  <script>
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburgerMenu.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
 
   <!-- Hero Section -->
   <main class="hero">
@@ -65,76 +88,74 @@
           View Promotion
         </button>
       </div>
-
       <div class="features">
-        <div class="feature">
+        <div class="feature1">
           <img src="images/Ellipse 8.png" alt="Trial">
           <span>Free 14 Days Trial</span>
         </div>
-        <div class="feature">
+        <div class="feature1">
           <img src="images/Ellipse 9.png" alt="Payment">
           <span>One Time Payment</span>
         </div>
       </div>
     </div>
-
     <div class="hero-image">
-      <img src="images/header_4 1.png" alt="App Preview">
+      <img src="images/header_4 1.png" alt="App Preview" style="position: relative; top: 20px;">
     </div>
   </main>
 
+  <!-- pages secton-->
 
   <section class="stats">
-    <h2>25K+ Installation and featured on</h2>
+    <h2><span style="color: #6953D3;">25K+ Installation</span> and Featured On</h2>
+
+    <!-- Partners Section -->
     <div class="partners">
-      <img src="technews.png" alt="TechNews">
-      <img src="hello-world.png" alt="Hello World">
-      <img src="it-blog.png" alt="IT Blog">
-      <img src="digitek.png" alt="DigiTek">
-      <img src="teckrown.png" alt="Teckrown">
+      <img src="images/TECHNEWS.png" alt="TechNews">
+      <img src="images/hello world.png" alt="Hello World">
+      <img src="images/IT Blog.png" alt="IT Blog">
+      <img src="images/digitek.png" alt="DigiTek">
+      <img src="images/teckrown.png" alt="Teckrown">
     </div>
 
-    <div class="ellipe-cls">
+    <!-- Features Section -->
+    <div class="ellipse-cls">
+      <hr class="divider">
 
-      <div>
-        <hr style="margin: 50px 0 25px 0;">
-      </div>
+      <span class="cls-label">Notero-Easy Note App</span>
 
-      <div class="cls-btn2">
-        <span class="cls-label">Notero-Easy Note App</span>
-      </div>
-      <div style="margin-top: 15px;">
-        <h1 class="cls-para">
-          Awesome <span class="para">Feature</span>
-        </h1>
-      </div>
+      <h1 class="cls-para">
+        Awesome <span class="gradient-text">Features</span>
+      </h1>
 
+      <!-- Feature Circles -->
       <div class="cls-circle">
-        <div class="cls1">
-          <img src="images/power.png" alt="image one">
-          <p class="para3">Notes Powerful and <br> Security</p>
+        <div class="feature">
+          <img src="images/power.png" alt="Notes Security">
+          <p class="feature-text">Notes Powerful and <br> Security</p>
         </div>
-        <div class="cls2">
-          <img src="images/search.png" alt="image one">
-          <p class="para3">Easy Sort, Classify and <br> Search</p>
+        <div class="feature">
+          <img src="images/search.png" alt="Easy Search">
+          <p class="feature-text">Easy Sort, Classify and <br> Search</p>
         </div>
-        <div class="cls3">
-          <img src="images/share.png" alt="image one">
-          <p class="para3">Collaboration and <br> Share</p>
+        <div class="feature">
+          <img src="images/share.png" alt="Collaboration">
+          <p class="feature-text">Collaboration and <br> Share</p>
         </div>
-        <div class="cls4">
-          <img src="images/note.png" alt="image one">
-          <p class="para3">Quick Note In <br> Everywhere</p>
+        <div class="feature">
+          <img src="images/note.png" alt="Quick Note">
+          <p class="feature-text">Quick Note In <br> Everywhere</p>
         </div>
-        <div class="cls5">
-          <img src="images/design.png" alt="image one">
-          <p class="para3">Write and Draw <br> on Ipad</p>
+        <div class="feature">
+          <img src="images/design.png" alt="Write and Draw">
+          <p class="feature-text">Write and Draw <br> on iPad</p>
         </div>
       </div>
     </div>
   </section>
 
 
+  <!-- blog section-->
   <section>
     <div class="container">
       <div class="cls-left">
@@ -186,6 +207,8 @@
     </div>
   </section>
 
+
+  <!--section-->
   <section>
     <div class="cls-sec3">
       <div class="cls-sec-1">
@@ -211,12 +234,14 @@
           </div>
         </div>
         <div class="cls-sec-12">
-          <p>Web Clipper Extension</p>
-          <img src="images/Vector1.png" alt="">
+          <select name="cars" id="cars">
+            <option value="volvo">Web Clipper Extension</option>
+          </select>
         </div>
         <div class="cls-sec-13">
-          <p>Web Clipper Extension</p>
-          <img src="images/Vector1.png" alt="">
+          <select name="cars" id="cars">
+            <option value="volvo">Web Clipper Extension</option>
+          </select>
         </div>
         <div class="cls-sec-14">
           <button class="cls-sec-btn">
@@ -231,14 +256,16 @@
     </div>
   </section>
 
+
+
+  <!--section-->
   <section>
     <div class="container">
       <div class="cls-left">
-        <img src="images/about_s4_img3 1.png" alt="" class="img-cls">
+        <img src="images/about_s4_img3 1.png" alt="Beautiful Themes Image" class="img-cls">
       </div>
 
       <div class="cls-right">
-
         <div class="cls-btn3">
           <span class="cls-label1">Beautiful Themes</span>
         </div>
@@ -249,57 +276,83 @@
 
         <div class="cls-para4">
           <p class="cls-para3">
-            Stay focused and productive with a clean clutter-free note space. the flexible ways to organize your notes:
-            hashtags , nested notebooks , pining notes to the top of the note list, ect.
+            Stay focused and productive with a clean clutter-free note space. The flexible ways to organize your notes:
+            hashtags, nested notebooks, pinning notes to the top of the note list, etc.
           </p>
         </div>
 
         <div class="cls-sec4-1">
           <ul>
             <li class="cls-sec4-2">Filtering notes using matched keywords</li>
-            <li class="cls-sec4-2"><strong>8 Beautiful themes for you select</strong></li>
+            <li class="cls-sec4-2"><strong>8 Beautiful themes for you to select</strong></li>
             <li class="cls-sec4-2">Save energy for your device</li>
             <li class="cls-sec4-2">Easy to switch between light and dark mode</li>
           </ul>
         </div>
+
         <div class="cls-sec4-btn">
-          <button class="cls-btn-bt">Discovery Now</button>
+          <button class="cls-btn-bt">Discover Now</button>
         </div>
       </div>
     </div>
   </section>
 
+
+
+  <!--section-->
   <section>
+    <!-- Section Label -->
     <div class="cls-sec5-1">
       <span class="cls-label1">One-time payment</span>
     </div>
+
+    <!-- Section Title -->
     <div class="cls-sec5-2">
-      <strong>Integration With <span class="cls-para2"> Popular App</span></strong>
+      <strong>Integration With <span class="cls-para2">Popular Apps</span></strong>
     </div>
+
+    <!-- Section Description -->
     <div class="cls-sec5-3">
-      <p>Notero integrate with popular apps. Help you easy to connect and collaboration</p>
+      <p>Notero integrates with popular apps to help you easily connect and collaborate.</p>
     </div>
+
+    <!-- Section Integration Logos -->
     <div class="cls-sec5-4">
-      <img src="images/intg1.png" alt="" class="cls-sec5-img">
-      <img src="images/intg5.png" alt="" class="cls-sec5-img2">
-      <img src="images/intg4.png" alt="" class="cls-sec5-img3">
-      <img src="images/intg3.png" alt="" class="cls-sec5-img4">
-      <img src="images/intg2.png" alt="" class="cls-sec5-img5">
+      <img src="images/intg1.png" alt="Integration 1" class="cls-sec5-img">
+      <img src="images/intg5.png" alt="Integration 2" class="cls-sec5-img2">
+      <img src="images/intg4.png" alt="Integration 3" class="cls-sec5-img3">
+      <img src="images/intg3.png" alt="Integration 4" class="cls-sec5-img4">
+      <img src="images/intg2.png" alt="Integration 5" class="cls-sec5-img5">
     </div>
   </section>
 
 
+
+
+  <!--section-->
   <section>
+    <!-- Container for Images -->
     <div class="cls-sec6">
-      <img src="images/3.png" alt="" class="cls-sect-1">
-      <img src="images/4(1).png" alt="" class="cls-sect-2">
-      <img src="images/hand 1.png" alt="" class="cls-sect-3">
-      <img src="images/1(1).png" alt="" class="cls-sect-4">
-      <img src="images/2(1).png" alt="" class="cls-sect-5">
-    </div>
+      <!-- Image 1 -->
+      <img src="images/3.png" alt="Image 1" class="cls-sect-1">
 
+      <!-- Image 2 -->
+      <img src="images/4(1).png" alt="Image 2" class="cls-sect-2">
+
+      <!-- Center Image (Hand) -->
+      <img src="images/hand 1.png" alt="Center Image" class="cls-sect-3">
+
+      <!-- Image 4 -->
+      <img src="images/1(1).png" alt="Image 4" class="cls-sect-4">
+
+      <!-- Image 5 -->
+      <img src="images/2(1).png" alt="Image 5" class="cls-sect-5">
+    </div>
   </section>
 
+
+
+  <!--section-->
 
   <section class="container">
     <div class="cls-lft-sec">
@@ -364,6 +417,9 @@
   </section>
 
 
+
+
+  <!--section-->
   <section>
     <div class="cls-sec7-1">
       <span class="cls-label1">One-time payment</span>
@@ -389,6 +445,9 @@
       </div>
     </div>
   </section>
+
+
+  <!--section-->
 
   <section class="sec-last">
     <div class="cls-sec-last-1">
@@ -430,12 +489,12 @@
           <option value="opel">Opel</option>
           <option value="audi">Audi</option>
         </select>
-        
+
       </div>
-      
+
     </div>
     <div class="line">
-      
+
     </div>
   </section>
 </body>
